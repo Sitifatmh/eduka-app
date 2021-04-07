@@ -1,0 +1,212 @@
+import 'package:edukaquiz_app/home.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Voli extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Colors.white,
+          ),
+          child: Column(
+            children: <Widget>[
+              SizedBox(height: 70,),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child:Image.asset('assets/gambarvoli.png' , width: 370.0,),
+              ),
+              SizedBox(height: 40,),
+              SingleChildScrollView(
+                child: Container(
+                  width: 450,
+                  decoration: BoxDecoration(
+                    color: Color(0xff59E0FE),
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(60), topRight: Radius.circular(60),
+                    ),
+                  ),
+                  child: Container(
+                    margin: EdgeInsets.all(25),
+
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        SizedBox(height: 10,),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'Voli',
+                            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        SizedBox(height: 10,),
+                        Text('Pengertian Bola Voli',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text(
+                          'Permainan Bola Voli merupakan olahraga yang menggunakan bola berbahan karet atau kulit dan dimainkan secara berkelompok oleh dua tim. Setiap tim terdiri dari 6 orang pemain yang area permainannya dipisahkan oleh net.', textAlign: TextAlign.justify,),
+                        Text(
+                          'Tujuan olahraga ini adalah memukul bola hingga melewati net sekaligus menjatuhkannya ke lantai lapangan di area lawan. Cara memukul bolanya pun tidak boleh sembarangan, karena ada teknik-teknik tertentu yang harus dikuasai para pemain.',
+                          style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify,),
+                        Text(
+                          'Permainannya sendiri dibagi menjadi 2–3 babak. Tim yang mendapatkan skor 25 terlebih dahulu akan dinyatakan sebagai pemenang di babak tersebut. Pemenang pertandingan adalah tim yang berhasil memenangkan dua babak.',
+                          style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify,),
+                        SizedBox(height: 10,),
+                        Text('Peraturan Bola Voli',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Salah satu syarat untuk bisa memainkan bola voli adalah memahami peraturannya. Olahraga ini pun memiliki sejumlah aturan yang berkaitan dengan hal teknis, pelanggaran, serta penghitungan skor.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('1. Aturan Main dan Pelanggaran',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('- Setiap tim terdiri dari enam orang. Ada empat peran yang harus dimiliki setiap tim, yaitu spiker, tosser, defender, dan libero.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Jumlah pemain dalam satu tim minimal empat orang.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Permainan dimulai dengan lempar koin untuk menentukan tim mana yang berhak melakukan servis pertama kali.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Servis dilakukan di luar garis lapangan dan bola harus bisa melewati net.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Bola dinyatakan out apabila keluar dari garis lapangan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Pemain harus melakukan passing, smash, dan teknik lainnya di area lapangannya sendiri. Artinya, pemain tidak boleh sampai melewati batas net atau masuk ke area lawan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Bola dinyatakan masuk apabila sudah menyentuh lantai dan berada di dalam garis lapangan permainan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Pemain hanya boleh memukul/memantulkan bola, bukan menangkap atau melemparnya seperti pada permainan basket. Menangkap dan melempar bola akan dinilai sebagai suatu pelanggaran.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Pemain boleh menggunakan anggota tubuh mana saja untuk memantulkan bola. Pemain dianggap melakukan pelanggaran apabila memantulkan bola dengan cara menendang.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Tidak ada batasan untuk pergantian pemain dan boleh dilakukan berkali-kali.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Pemain dilarang menyentuh net secara sengaja maupun tidak sengaja.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Berbicara kasar, baik kepada tim lawan maupun wasit, bisa dianggap sebagai pelanggaran.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 8,),
+                        Text('2. Penghitungan skor',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Permainan bola voli biasanya berlangsung selama 2–3 set. Dua babak pertama akan menentukan apakah set tambahan perlu dilakukan atau tidak. Apabila ada tim yang langsung memenangkan dua set secara berturut-turut, pertandingan tidak perlu dilanjutkan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('Tim yang menang tadi langsung dinyatakan sebagai pemenang. Bila kedua tim sama-sama menang di dua set pertama, pertandingan akan berlanjut sampai set ketiga. Babak inilah yang akan menentukan siapa pemenangnya.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('Sementara untuk penghitungan skor, olahraga ini menggunakan sistem rally point dengan jumlah poin 25. Artinya, tim yang mendapatkan poin 25 terlebih dahulu akan dinyatakan menang di babak tersebut.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('Akan tetapi, apabila terjadi skor seri (misalnya 24-24), poin kemenangan akan berubah. Pertandingan otomatis dilanjutkan sampai ada salah satu tim yang berhasil memimpin dengan selisih dua angka.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 8,),
+                        Text('Ukuran Lapangan Bola Voli',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Sama seperti olahraga lainnya, voli juga dimainkan di lapangan dengan ukuran tertentu. Tak hanya luas lapangan, Anda juga harus mengetahui setiap aspek yang ada di dalamnya, termasuk net dan bola.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('1. Lapangan Bola Voli',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('- Panjang : 18 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Lebar : 9 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Lebar garis lapangan : 5 cm',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Area serang : 3 meter dari garis tengah',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('2. Net Bola Voli',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('- Tinggi net untuk voli putra : 2,43 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Tinggi net untuk voli putri : 2,24 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Panjang net : 9 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Lebar net : 1 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Jarak tiang net dengan garis tepi lapangan :  0,5–1 meter',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Lebar pita tepian net : 5 cm',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Ukuran jaring : 10 cm (berbentuk persegi)',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Tinggi antena : 80 cm di atas net',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('3. Bola Voli',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('- Bahan : kulit atau yang sintetis',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Bentuk : bulat sempurna',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Diameter : 18–20 cm',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Keliling lingkaran : 65–67 cm',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Berat : 260–280 gram',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('- Tekanan : 4,26 – 4,61 hPa/psi',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 8,),
+                        Text(' Teknik Dasar Bola Voli',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('1. Servis',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Servis adalah memukul bola dari luar garis lapangan untuk memulai permainan. Servis bisa sangat menentukan jalannya permainan, karena itu pukulan bola harus dilakukan dengan kuat dan tepat. Melakukan servis pun tidak boleh sembarangan dan ada tekniknya. Macam-macam servis sebagai berikut.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('a. Servis Bawah',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Servis ini cocok dilakukan oleh pemula, langkah awalnya dengan memegang bola di tangan kiri, posisikan agak di depan badan dan sejajar pinggang. Tangan kanan (posisi mengepal) kemudian berayun dari belakang ke depan dan memukul bola dari arah bawah.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('b. Servis Atas',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Servis ini dilakukan dengan posisi bola berada di atas. Servis ini pun bisa dilakukan dengan beberapa jenis teknik, misalnya floating dan jumping service.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('c. Floating Service',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Floating atau mengapung, artinya pemain melambungkan bola hingga ke atas kepala. Setelah itu, pemain langsung memukulnya hingga bola melesat ke depan dan melewati net.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('d. Jumping Service',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Sesuai namanya, servis ini dilakukan dengan cara melompat. Pemain melambungkan bola ke atas lalu melompat sambil melakukan pukulan dengan kuat.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('2. Passing',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Teknik passing dilakukan untuk mengendalikan permainan. Pemain dapat melakukan passing  untuk menerima bola, menangkis, sekaligus mengembalikan serangan lawan. Passing juga berguna untuk mengoper bola atau memberikan umpan kepada rekan satu tim. Sama seperti servis, passing juga dilakukan dengan dua macam cara.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('a. Passing Atas',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Teknik ini biasanya dilakukan untuk memberikan umpan kepada rekan setim yang akan melakukan smash. Passing atas dilakukan dengan kedua tangan. Bola diterima dengan kedua telapak tangan lalu melambungkannya lagi ke atas atau ke arah yang diinginkan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('b. Passing Bawah',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Teknik ini dilakukan ketika bola sudah berada di posisi rendah (di bawah kepala). Teknik inipun dapat dilakukan dengan dua cara, yaitu satu dan dua tangan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('c. Passing Bawah Satu Tangan',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Passing ini dilakukan saat posisi pemain terlalu jauh dari bola. Pemain harus membungkuk dan mengulurkan satu tangan untuk memukul/mengembalikan bola. Tak jarang pemain harus sambil melompat dan terjatuh demi menyelematkan bola.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('d. Passing Bawah Dua Tangan',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Cara melakukannya dengan menjatuhkan kedua tangan untuk menerima bola yang jatuh tepat di depan pemain. Ada dua teknik yang bisa dilakukan, yaitu the dig dan thumb over palm. Cara melakukan the dig adalah dengan tangan kanan diletakkan pada telapak kiri. Setelah itu, ibu jari kiri menggenggam jari-jari tangan kanan. Sedikit berbeda dari the dig, thumb over palm dilakukan dengan cara mengepalkan tangan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        Text('Tangan kiri mengepal lalu diletakkan pada telapak kanan. Jari-jari sebelah kanan lalu menggenggam seolah menutup kepalan tangan kiri. Sementara itu, kedua ibu jari berada di bagian atas.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('3. Smash atau Spike',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Smash termasuk dalam teknik menyerang yang membutuhkan insting, kekuatan tangan, dan juga keakuratan tinggi. Smash bertujuan untuk mematahkan serangan lawan sekaligus untuk mencetak poin. Teknik melakukan smash pun hampir mirip seperti jumping service, yaitu dengan cara melompat dan memukul bola dengan sangat kuat. Setidaknya, ada empat tahap gerakan dalam melakukan smash, yaitu berlari, melompat, memukul bola, lalu mendarat. Smash sebenarnya cukup sulit untuk dipelajari, tetapi teknik ini bisa menjadi penentu kemenangan apabila tembakannya bagus dan tepat sasaran.  Ada beberapa teknik smash yang bisa Anda pelajari bila ingin menekuni voli, contohnya sebagai berikut',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('a. Open Smash',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Setelah ada pemain yang memberikan umpan, pemukul (spiker) akan melakukan gerakan awalan, yaitu melangkah lebar lalu melompat ke arah bola. Saat berada di posisi puncak loncatan, spiker langsung memukul bola dengan sangat keras.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('b. Quick Smash',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Spiker melompat lebih dulu dan siap dalam posisi melakukan smash. Di waktu yang bersamaan, pemain lain langsung memberikan umpan kepada spiker. Teknik ini harus dilakukan dengan cermat karena membutuhkan timing yang tepat.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('c. Semi Smash',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Spiker berjalan perlahan menuju arah jatuhnya bola. Saat bola berada di posisi sekitar 1 meter di atas net, spiker langsung melompat dan memukul bola ke arah tim lawan.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('4. Blocking',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 5,),
+                        Text('Teknik ini berguna untuk menahan serangan sekaligus mencegah agar lawan gagal mencetak poin. Cara melakukan blocking adalah berdiri di dekat net dan harus dalam posisi siap melompat. Ketika serangan bola datang, pemain harus langsung melompat sambil mengangkat kedua tangan untuk menghalau bola. Teknik ini memang terlihat lebih mudah ketimbang yang lainnya, tetapi blocking tetap membutuhkan latihan agar pemain bisa menguasainya.',style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),textAlign: TextAlign.justify, ),
+                        SizedBox(height: 50.0,),
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 55,
+                          child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: BorderSide(color: Colors.pink)),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context){
+                                    return Home();
+
+                                  },
+                                ),
+                              );
+                            }, color: Colors.pink,
+                            textColor: Colors.white,
+                            child: Text(
+                              'Kembali',
+                              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),textAlign: TextAlign.left, ),
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
